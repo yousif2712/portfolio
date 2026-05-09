@@ -1,245 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yousif Nazeer - AI Portfolio</title>
-
-    <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family:Arial, sans-serif;
-        }
-
-        body{
-            background:#0f172a;
-            color:#fff;
-            scroll-behavior:smooth;
-        }
-
-        /* NAVBAR */
-        nav{
-            position:fixed;
-            width:100%;
-            top:0;
-            left:0;
-            background:#0b1220;
-            padding:15px 40px;
-            display:flex;
-            justify-content:space-between;
-            z-index:1000;
-        }
-
-        nav a{
-            color:#fff;
-            margin:0 10px;
-            text-decoration:none;
-        }
-
-        /* HERO */
-        .hero{
-            height:100vh;
-            display:flex;
-            align-items:center;
-            justify-content:center;
-            padding:80px 40px;
-        }
-
-        .hero-content{
-            display:flex;
-            align-items:center;
-            justify-content:space-between;
-            max-width:1100px;
-            width:100%;
-            gap:40px;
-        }
-
-        .hero-text h1{font-size:50px;}
-        .hero-text h2{font-size:18px;color:#94a3b8;margin:10px 0;}
-        .hero-text p{color:#cbd5e1;line-height:1.6;}
-
-        .btn{
-            padding:10px 20px;
-            border-radius:6px;
-            text-decoration:none;
-            margin-right:10px;
-            display:inline-block;
-        }
-
-        .primary{background:#38bdf8;color:black;}
-        .secondary{border:1px solid #38bdf8;color:#38bdf8;}
-
-        .hero-image img{
-            width:260px;
-            height:260px;
-            border-radius:50%;
-            border:4px solid #38bdf8;
-            object-fit:cover;
-        }
-
-        /* SECTIONS */
-        section{
-            padding:80px 20px;
-            max-width:1000px;
-            margin:auto;
-        }
-
-        h2.section-title{
-            text-align:center;
-            margin-bottom:30px;
-            font-size:32px;
-            color:#38bdf8;
-        }
-
-        /* ABOUT */
-        .about p{
-            text-align:center;
-            color:#cbd5e1;
-            line-height:1.7;
-        }
-
-        /* SKILLS */
-        .skills-grid{
-            display:grid;
-            grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
-            gap:15px;
-        }
-
-        .skill{
-            background:#1e293b;
-            padding:15px;
-            text-align:center;
-            border-radius:8px;
-        }
-
-        /* PROJECTS */
-        .projects-grid{
-            display:grid;
-            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-            gap:20px;
-        }
-
-        .project-card{
-            background:#1e293b;
-            padding:20px;
-            border-radius:10px;
-        }
-
-        /* CONTACT */
-        .contact form{
-            display:flex;
-            flex-direction:column;
-            gap:10px;
-        }
-
-        input, textarea{
-            padding:10px;
-            border:none;
-            border-radius:6px;
-        }
-
-        button{
-            padding:10px;
-            background:#38bdf8;
-            border:none;
-            border-radius:6px;
-            cursor:pointer;
-        }
-
-        @media(max-width:768px){
-            .hero-content{flex-direction:column;text-align:center;}
-        }
-
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yousif Nazeer - AI Portfolio</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <!-- NAVBAR -->
 <nav>
-    <div><b>Yousif</b></div>
-    <div>
-        <a href="#hero">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </div>
+    <div class="logo">Yousif AI</div>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
 </nav>
 
 <!-- HERO -->
-<section id="hero" class="hero">
-    <div class="hero-content">
-        <div class="hero-text">
-            <h1>Yousif Nazeer</h1>
-            <h2>Aspiring AI Engineer | Mathematics Graduate | Intelligent Systems Builder</h2>
-            <p>Building Smart Systems Through AI, Mathematics & Innovation. Passionate about ML, RNN, ARIMA, and Real-World Problem Solving.</p>
-            <br>
-            <a class="btn primary" href="#projects">View Projects</a>
-            <a class="btn secondary" href="resume.pdf" download>Download CV</a>
-        </div>
+<section id="home" class="hero">
+    <div class="hero-text fade-in">
+        <h1>Yousif Nazeer</h1>
+        <h3>AI Engineer | ML | RNN | ARIMA Specialist</h3>
+        <p>Building intelligent systems using mathematics, deep learning & real-world AI solutions.</p>
+        <a href="#projects" class="btn">View Projects</a>
+    </div>
 
-        <div class="hero-image">
-            <img src="profile.jpg" alt="Profile">
-        </div>
+    <div class="hero-img zoom-in">
+        <img src="profile.jpg" alt="profile">
     </div>
 </section>
 
 <!-- ABOUT -->
-<section id="about" class="about">
-    <h2 class="section-title">About Me</h2>
+<section id="about">
+    <h2>About Me</h2>
     <p>
-        I am a Mathematics graduate focused on Artificial Intelligence, Machine Learning,
-        and Intelligent Systems. I specialize in predictive modeling, time series analysis,
-        ARIMA, and RNN-based deep learning systems for real-world applications.
+        I am a Mathematics graduate focused on Artificial Intelligence,
+        Machine Learning, RNN, and predictive modeling systems.
     </p>
 </section>
 
 <!-- SKILLS -->
 <section id="skills">
-    <h2 class="section-title">Skills</h2>
-    <div class="skills-grid">
-        <div class="skill">Python</div>
-        <div class="skill">Machine Learning</div>
-        <div class="skill">Deep Learning (RNN)</div>
-        <div class="skill">ARIMA Models</div>
-        <div class="skill">Data Analysis</div>
-        <div class="skill">Mathematics</div>
+    <h2>Skills</h2>
+    <div class="grid">
+        <div>Python</div>
+        <div>Machine Learning</div>
+        <div>Deep Learning</div>
+        <div>RNN</div>
+        <div>ARIMA</div>
+        <div>Data Science</div>
     </div>
 </section>
 
 <!-- PROJECTS -->
 <section id="projects">
-    <h2 class="section-title">Projects</h2>
-    <div class="projects-grid">
-        <div class="project-card">
-            <h3>RNN Time Series Forecasting</h3>
-            <p>Predicting sequential data using Recurrent Neural Networks.</p>
-        </div>
-
-        <div class="project-card">
-            <h3>ARIMA Anomaly Detection</h3>
-            <p>Detecting anomalies in time series using statistical modeling.</p>
-        </div>
-
-        <div class="project-card">
-            <h3>Student Performance System</h3>
-            <p>AI-based evaluator for academic performance prediction.</p>
-        </div>
+    <h2>Projects</h2>
+    <div class="grid">
+        <div class="card">RNN Forecasting System</div>
+        <div class="card">ARIMA Anomaly Detection</div>
+        <div class="card">Student Performance AI</div>
     </div>
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="contact">
-    <h2 class="section-title">Contact</h2>
+<section id="contact">
+    <h2>Contact</h2>
     <form>
-        <input type="text" placeholder="Your Name">
-        <input type="email" placeholder="Your Email">
-        <textarea rows="5" placeholder="Your Message"></textarea>
-        <button type="submit">Send</button>
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <textarea placeholder="Message"></textarea>
+        <button>Send</button>
     </form>
 </section>
 
+<script src="script.js"></script>
 </body>
 </html>
